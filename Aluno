@@ -1,0 +1,47 @@
+from tkinter import *
+
+class Application:
+    def __init__(self,master=None):
+        self.container1 = Frame(master)
+        self.container1.pack()
+        self.msg = Label(self.container1,text="ESUP - Sistemas de Informação")
+        self.msg["font"] = ("Verdana","20","bold")
+        self.msg.pack()
+        
+        self.container2 = Frame(master)
+        self.container2.pack()
+        self.labelMsg = Label(self.container2,text="Insira os seus dados:")
+        self.labelMsg.pack(side=LEFT)
+
+        self.nomeAluno = Entry(self.container2)
+        self.nomeAluno.pack(side=RIGHT)
+
+        self.container5 = Frame(master)
+        self.container5.pack()
+        self.labelCurso = Label(self.container5,text="o Curso:")
+        self.labelCurso.pack(side=LEFT)
+        self.nomeCurso = Entry(self.container5)
+        self.nomeCurso.pack(side=RIGHT)
+
+        self.container3 = Frame(master)
+        self.container3.pack()
+        self.botao = Button(self.container3)
+        self.botao["text"] = "Entrar"
+        self.botao.bind("<Button-1>", self.msgBoasVindas)
+        self.botao.pack()
+
+        self.container4 = Frame(master)
+        self.container4.pack()
+        self.msgBV = Label(self.container4,text="")
+        self.msgBV.pack()
+
+
+    def msgBoasVindas(self,event):
+        aluno = self.nomeAluno.get()
+        curso = self.nomeCurso.get()
+        self.msgBV["text"]=f"seja bem vindo, {aluno}. Seu curso escolido foi: {curso}"
+
+
+root = Tk()
+Application(root)
+root.mainloop()
