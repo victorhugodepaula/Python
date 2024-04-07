@@ -1,0 +1,7 @@
+b1 = float(input('Insira a nota do primeiro bimestre: '))
+
+b2 = float(input('Insira a nota do segundo bimestre: '))
+
+b3 = float(input('Insira a nota do terceiro bimestre: '))
+
+b4 = float(input('Insira a nota do quarto bimestre: '))
