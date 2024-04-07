@@ -1,0 +1,13 @@
+#print (nome)
+#print (idade)
+#print (curso)
+
+nome = input ('Qual é o seu nome? ')
+idade = input ('Qual é a sua idade? ')
+curso = input ('Qual é a sua curso? ')
+
+print ('Seja bem vindo: ' ,nome)
+print ('Sua idade é: ' ,idade)
+print ('Seu curso é: ' ,curso)
+
+print ('ola, ' ,nome, 'constamos que a sua idade é, ' ,idade, 'seja bem vindo au curso, ' ,curso)
