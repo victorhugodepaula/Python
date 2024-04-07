@@ -1,0 +1,11 @@
+Num1 = float(input('Digite a primeira nota'))
+Num2 = float(input('Digite a segunda nota'))
+
+média = (Num1 + Num2) / 2
+
+if média == 10:
+    print(f'aprovado com louvor')
+elif média >= 7:
+    print(f'reprovado')
+else:
+    print(f'o segundo numero e o maior')
