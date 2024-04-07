@@ -1,0 +1,30 @@
+#Meu primeiro Sistma em Python
+
+""""
+Isto é um comentario
+
+Isto tambem é
+"""
+
+#nome = 'Victr'
+#idade = 20
+profissao = 'desenpregado'
+altura = 1.72
+
+#print (nome)
+#print (idade)
+print (profissao)
+print (altura)
+
+nome = input ('Qual é o seu nome? ')
+
+idade = input ('qual é a sua idade? ')
+
+print ('Seja bem vindo, ' ,nome)
+
+print ('Sua idade é:, ' ,idade)
+
+# Tipo de dados
+
+TipoMoeda = 'Real'
+print(type(TipoMoeda))
