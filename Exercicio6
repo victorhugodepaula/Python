@@ -1,0 +1,6 @@
+print('Conversor de metros para centímetros')
+m = float(input('Insira um valor em metros : '))
+
+resultado = m * 100
+
+print(m, 'em centímetros é igual a:', resultado , 'centímetros')
